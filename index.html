@@ -17,177 +17,235 @@
         .pokeball-btn::before {
             content: '';
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 18px; /* Slightly smaller for mobile */
+            height: 18px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f0f0f0' stroke='%23333' stroke-width='5'/%3E%3Cpath d='M10 50 A40 40 0 0 1 90 50' fill='%23ff4444' stroke='%23333' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='15' fill='%23f0f0f0' stroke='%23333' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fff'/%3E%3C/svg%3E");
             background-size: contain;
             background-repeat: no-repeat;
-            margin-right: 8px;
+            margin-right: 6px; /* Adjusted margin */
             vertical-align: middle;
         }
         .camera-btn::before {
             content: '';
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 18px; /* Slightly smaller for mobile */
+            height: 18px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z' /%3E%3C/svg%3E%0A");
             background-size: contain;
             background-repeat: no-repeat;
-            margin-right: 8px;
+            margin-right: 6px; /* Adjusted margin */
             vertical-align: middle;
         }
         .pokedex-screen {
-            background-color: #e0e0e0; /* Light gray screen */
-            border: 10px solid #d9534f; /* Pokedex red border */
-            border-radius: 10px 10px 30px 10px; /* Pokedex-like shape */
-            box-shadow: 0 0 0 5px #b33e3a, 0 5px 15px rgba(0,0,0,0.2);
+            background-color: #e0e0e0; 
+            border: 8px solid #d9534f; /* Slightly thinner border for mobile */
+            border-radius: 8px 8px 20px 8px; 
+            box-shadow: 0 0 0 4px #b33e3a, 0 4px 12px rgba(0,0,0,0.2); /* Adjusted shadow */
         }
         .condition-tag {
-            padding: 6px 12px;
+            padding: 4px 10px; /* Smaller padding for mobile */
             border-radius: 20px;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 0.9em;
+            font-size: 0.8em; /* Smaller font for mobile */
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .condition-mint { background-color: #4CAF50; color: white; } /* Green */
-        .condition-near-mint { background-color: #8BC34A; color: white; } /* Light Green */
-        .condition-lightly-played { background-color: #FFEB3B; color: #333; } /* Yellow */
-        .condition-moderately-played { background-color: #FF9800; color: white; } /* Orange */
-        .condition-heavily-played { background-color: #f44336; color: white; } /* Red */
-        .condition-damaged { background-color: #795548; color: white; } /* Brown */
+        .condition-mint { background-color: #4CAF50; color: white; } 
+        .condition-near-mint { background-color: #8BC34A; color: white; } 
+        .condition-lightly-played { background-color: #FFEB3B; color: #333; } 
+        .condition-moderately-played { background-color: #FF9800; color: white; } 
+        .condition-heavily-played { background-color: #f44336; color: white; } 
+        .condition-damaged { background-color: #795548; color: white; } 
 
         .drop-zone {
-            border: 3px dashed #a0aec0;
+            border: 2px dashed #a0aec0; /* Thinner border */
             transition: border-color 0.3s, background-color 0.3s;
         }
         .drop-zone.dragover {
             border-color: #4299e1;
             background-color: #ebf8ff;
         }
-        .results-scrollbar::-webkit-scrollbar { width: 8px; }
+        .results-scrollbar::-webkit-scrollbar { width: 6px; } /* Thinner scrollbar */
         .results-scrollbar::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 10px; }
         .results-scrollbar::-webkit-scrollbar-thumb { background: #d9534f; border-radius: 10px; }
         .results-scrollbar::-webkit-scrollbar-thumb:hover { background: #b33e3a; }
-        .image-preview-container { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1rem; }
-        .image-preview-container img { max-width: 48%; height: auto; border: 3px solid #facc15; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-        .button-group { display: flex; flex-direction: column; sm:flex-direction: row; gap: 0.5rem; justify-content: center; margin-top: 0.5rem; }
+        
+        /* Responsive image preview container */
+        .image-preview-container { 
+            display: flex; 
+            flex-direction: column; /* Stack vertically by default */
+            gap: 0.75rem; 
+            align-items: center; /* Center items when stacked */
+            margin-bottom: 1rem; 
+        }
+        .image-preview-container img { 
+            max-width: 80%; /* Allow images to be larger when stacked */
+            height: auto; 
+            border: 2px solid #facc15; /* Thinner border */
+            border-radius: 6px; 
+            box-shadow: 0 1px 4px rgba(0,0,0,0.15); 
+        }
+
+        @media (min-width: 768px) { /* md breakpoint */
+            .pokedex-screen {
+                border-width: 10px;
+                border-radius: 10px 10px 30px 10px;
+                box-shadow: 0 0 0 5px #b33e3a, 0 5px 15px rgba(0,0,0,0.2);
+            }
+            .condition-tag {
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+            .pokeball-btn::before, .camera-btn::before {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+            .image-preview-container {
+                flex-direction: row; /* Side-by-side on medium screens and up */
+                justify-content: center;
+            }
+            .image-preview-container img {
+                max-width: 48%; /* Revert to side-by-side sizing */
+                 border-width: 3px;
+            }
+        }
+
+        .button-group { 
+            display: flex; 
+            flex-direction: column; /* Stack buttons vertically by default */
+            gap: 0.5rem; 
+            justify-content: center; 
+            margin-top: 0.5rem; 
+            width: 100%; /* Make button group take full width */
+        }
+        .button-group button {
+            width: 100%; /* Make buttons full width within the group */
+        }
+
+        @media (min-width: 640px) { /* sm breakpoint */
+            .button-group {
+                flex-direction: row; /* Buttons side-by-side on small screens and up */
+            }
+             .button-group button {
+                width: auto; /* Revert to auto width for buttons */
+            }
+        }
 
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-blue-300 via-indigo-400 to-purple-500">
+<body class="min-h-screen flex flex-col items-center justify-start sm:justify-center p-4 bg-gradient-to-br from-blue-300 via-indigo-400 to-purple-500">
 
-    <header class="mb-8 text-center">
+    <header class="my-6 md:mb-8 text-center w-full px-2">
         <div class="flex items-center justify-center mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100" class="mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" class="mr-2 sm:mr-3"> {/* Smaller logo for mobile */}
                 <circle cx="50" cy="50" r="48" fill="#fff" stroke="#333" stroke-width="4"/>
                 <path d="M10 50 A40 40 0 0 1 90 50" fill="#ff4444" stroke="#333" stroke-width="4"/>
                 <circle cx="50" cy="50" r="18" fill="#fff" stroke="#333" stroke-width="4"/>
                 <circle cx="50" cy="50" r="10" fill="#eee" stroke="#333" stroke-width="2"/>
             </svg>
-            <h1 class="font-pokemon-title text-4xl md:text-5xl text-yellow-300" style="text-shadow: 2px 2px #3b82f6;">PokéCondition Rater</h1>
+            <h1 class="font-pokemon-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-300" style="text-shadow: 1px 1px #3b82f6; sm:text-shadow: 2px 2px #3b82f6;">PokéCondition Rater</h1>
         </div>
-        <p class="text-white text-lg">Professor <span id="professorName">[Your Name]</span>'s trusty Card Analyzer!</p>
+        <p class="text-white text-sm sm:text-lg">Professor <span id="professorName">Ren</span>'s trusty Card Analyzer!</p>
     </header>
 
-    <main class="w-full max-w-2xl bg-white/90 backdrop-blur-md shadow-2xl rounded-xl p-6 md:p-8 pokedex-screen">
+    <main class="w-full max-w-2xl bg-white/90 backdrop-blur-md shadow-2xl rounded-xl p-4 md:p-6 lg:p-8 pokedex-screen">
         <section id="uploadSectionFront" class="text-center">
-            <h2 class="font-pokemon-title text-2xl text-gray-700 mb-2">Step 1: Front of Card</h2>
-            <p class="text-gray-600 mb-6">Upload a clear photo of the <strong class="text-red-500">FRONT</strong> of your Pokémon card.</p>
-            <div id="dropZoneFront" class="drop-zone p-8 md:p-12 rounded-lg bg-gray-50 hover:bg-blue-50 cursor-pointer">
+            <h2 class="font-pokemon-title text-xl md:text-2xl text-gray-700 mb-2">Step 1: Front of Card</h2>
+            <p class="text-gray-600 text-sm md:text-base mb-4">Upload a clear photo of the <strong class="text-red-500">FRONT</strong>.</p>
+            <div id="dropZoneFront" class="drop-zone p-4 sm:p-6 md:p-8 lg:p-12 rounded-lg bg-gray-50 hover:bg-blue-50 cursor-pointer">
                 <input type="file" id="cardUploaderFront" class="hidden" accept="image/png, image/jpeg">
                 <input type="file" id="cardCaptureFront" class="hidden" accept="image/*" capture="environment">
                 <div class="flex flex-col items-center">
-                    <svg class="w-16 h-16 text-gray-500 mb-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                    <p class="text-gray-700 font-semibold pointer-events-none">Drag & Drop FRONT image</p>
-                    <p class="text-gray-500 text-sm pointer-events-none">or</p>
-                    <div class="button-group">
-                        <button type="button" id="browseButtonFront" class="pokeball-btn bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 text-gray-500 mb-3 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                    <p class="text-gray-700 text-sm sm:text-base font-semibold pointer-events-none">Drag & Drop FRONT image</p>
+                    <p class="text-gray-500 text-xs sm:text-sm pointer-events-none">or</p>
+                    <div class="button-group mt-3"> 
+                        <button type="button" id="browseButtonFront" class="text-sm sm:text-base pokeball-btn bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-3 sm:px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">
                             Browse Files
                         </button>
-                        <button type="button" id="takePhotoButtonFront" class="camera-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
+                        <button type="button" id="takePhotoButtonFront" class="text-sm sm:text-base camera-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-3 sm:px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
                             Take Photo
                         </button>
                     </div>
                 </div>
             </div>
-            <p class="text-xs text-gray-500 mt-4">Supports: JPG, PNG. Max size: 5MB.</p>
+            <p class="text-xs text-gray-500 mt-3">Supports: JPG, PNG. Max size: 5MB.</p>
         </section>
 
         <section id="uploadSectionBack" class="hidden text-center">
-            <h2 class="font-pokemon-title text-2xl text-gray-700 mb-2">Step 2: Back of Card</h2>
-            <p class="text-gray-600 mb-6">Great! Now upload a clear photo of the <strong class="text-blue-500">BACK</strong> of your Pokémon card.</p>
-             <div class="mb-4">
-                <img id="frontImageMiniPreview" src="https://placehold.co/100x140/A0AEC0/FFFFFF?text=Front" alt="Front of Card Preview" class="mx-auto rounded-md border-2 border-gray-300 shadow-sm h-28">
+            <h2 class="font-pokemon-title text-xl md:text-2xl text-gray-700 mb-2">Step 2: Back of Card</h2>
+            <p class="text-gray-600 text-sm md:text-base mb-4">Great! Now the <strong class="text-blue-500">BACK</strong> of your card.</p>
+             <div class="mb-3">
+                <img id="frontImageMiniPreview" src="https://placehold.co/80x112/A0AEC0/FFFFFF?text=Front" alt="Front of Card Preview" class="mx-auto rounded-md border-2 border-gray-300 shadow-sm h-24 sm:h-28"> 
                 <p class="text-xs text-gray-500 mt-1">Front Image Uploaded</p>
             </div>
-            <div id="dropZoneBack" class="drop-zone p-8 md:p-12 rounded-lg bg-gray-50 hover:bg-blue-50 cursor-pointer">
+            <div id="dropZoneBack" class="drop-zone p-4 sm:p-6 md:p-8 lg:p-12 rounded-lg bg-gray-50 hover:bg-blue-50 cursor-pointer">
                 <input type="file" id="cardUploaderBack" class="hidden" accept="image/png, image/jpeg">
                 <input type="file" id="cardCaptureBack" class="hidden" accept="image/*" capture="environment">
                 <div class="flex flex-col items-center">
-                    <svg class="w-16 h-16 text-gray-500 mb-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                    <p class="text-gray-700 font-semibold pointer-events-none">Drag & Drop BACK image</p>
-                    <p class="text-gray-500 text-sm pointer-events-none">or</p>
-                    <div class="button-group">
-                        <button type="button" id="browseButtonBack" class="pokeball-btn bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 text-gray-500 mb-3 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                    <p class="text-gray-700 text-sm sm:text-base font-semibold pointer-events-none">Drag & Drop BACK image</p>
+                    <p class="text-gray-500 text-xs sm:text-sm pointer-events-none">or</p>
+                     <div class="button-group mt-3">
+                        <button type="button" id="browseButtonBack" class="text-sm sm:text-base pokeball-btn bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-3 sm:px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">
                             Browse Files
                         </button>
-                        <button type="button" id="takePhotoButtonBack" class="camera-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
+                        <button type="button" id="takePhotoButtonBack" class="text-sm sm:text-base camera-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-3 sm:px-4 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
                             Take Photo
                         </button>
                     </div>
                 </div>
             </div>
-            <p class="text-xs text-gray-500 mt-4">Supports: JPG, PNG. Max size: 5MB.</p>
-            <button type="button" id="backButton" class="mt-4 text-sm text-gray-600 hover:text-gray-800 underline">Go Back to Front Upload</button>
+            <p class="text-xs text-gray-500 mt-3">Supports: JPG, PNG. Max size: 5MB.</p>
+            <button type="button" id="backButton" class="mt-3 text-xs sm:text-sm text-gray-600 hover:text-gray-800 underline">Go Back to Front Upload</button>
         </section>
 
-        <section id="loadingSection" class="hidden text-center py-12">
-            <div class="flex justify-center items-center mb-4">
-                <svg class="animate-spin h-16 w-16 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <section id="loadingSection" class="hidden text-center py-10 md:py-12">
+            <div class="flex justify-center items-center mb-3">
+                <svg class="animate-spin h-12 w-12 md:h-16 md:w-16 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
             </div>
-            <p class="font-pokemon-title text-xl text-gray-700">Analyzing your card...</p>
-            <p class="text-gray-600">Just like a Pokédex scan!</p>
+            <p class="font-pokemon-title text-lg md:text-xl text-gray-700">Analyzing your card...</p>
+            <p class="text-gray-600 text-sm md:text-base">Just like a Pokédex scan!</p>
         </section>
 
         <section id="resultsSection" class="hidden">
-            <h2 class="font-pokemon-title text-2xl text-gray-700 mb-4 text-center">Analysis Complete!</h2>
-            <div class="image-preview-container mb-6">
+            <h2 class="font-pokemon-title text-xl md:text-2xl text-gray-700 mb-4 text-center">Analysis Complete!</h2>
+            <div class="image-preview-container mb-4"> 
                 <img id="uploadedImagePreviewFront" src="https://placehold.co/150x210/A0AEC0/FFFFFF?text=Front" alt="Uploaded Card Front">
                 <img id="uploadedImagePreviewBack" src="https://placehold.co/150x210/A0AEC0/FFFFFF?text=Back" alt="Uploaded Card Back">
             </div>
-            <div class="text-center md:text-left results-scrollbar pr-2" style="max-height: 250px; overflow-y: auto;">
-                <p class="text-gray-700 mb-1 text-center"><strong class="font-semibold">Card Name (Mock):</strong> Pikachu</p>
-                <p class="text-gray-700 mb-3 text-center"><strong class="font-semibold">Set (Mock):</strong> Base Set</p>
+            <div class="text-center results-scrollbar pr-1 sm:pr-2" style="max-height: 200px; sm:max-height: 250px; overflow-y: auto;"> 
+                <p class="text-gray-700 text-sm md:text-base mb-1"><strong class="font-semibold">Card Name (Mock):</strong> Pikachu</p>
+                <p class="text-gray-700 text-sm md:text-base mb-2"><strong class="font-semibold">Set (Mock):</strong> Base Set</p>
                 
                 <div class="text-center">
-                    <p class="text-gray-800 font-semibold mb-1">Condition:</p>
-                    <div id="conditionResult" class="condition-tag condition-mint text-2xl mb-3 inline-block">
+                    <p class="text-gray-800 font-semibold text-sm md:text-base mb-1">Condition:</p>
+                    <div id="conditionResult" class="condition-tag text-xl md:text-2xl mb-2 inline-block">
                         Mint
                     </div>
                 </div>
                 
-                <p id="conditionDescription" class="text-gray-600 text-sm mb-4 text-center">
+                <p id="conditionDescription" class="text-gray-600 text-xs md:text-sm mb-3">
                     This card looks like it just came out of a booster pack! Ready for the Hall of Fame!
                 </p>
-                <p class="text-xs text-gray-500 mb-3 text-center"><em>Professor's Certainty: 97%</em></p>
+                <p class="text-xs text-gray-500 mb-3"><em>Professor's Certainty: 97%</em></p>
 
-                <button type="button" id="rateAnotherButton" class="w-full max-w-xs mx-auto pokeball-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
+                <button type="button" id="rateAnotherButton" class="w-full max-w-xs mx-auto text-sm sm:text-base pokeball-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full shadow-md transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">
                     Rate Another Card!
                 </button>
             </div>
         </section>
     </main>
 
-    <footer class="mt-8 text-center text-sm text-white/80">
+    <footer class="my-6 md:mt-8 text-center text-xs sm:text-sm text-white/80 px-2">
         <p>&copy; 2024-2025 PokéCondition Rater. Created with <span style="color: #e25555;">&hearts;</span> for Pokémon Trainers.</p>
-        <p>Not affiliated with Nintendo, Creatures Inc., or GAME FREAK.</p>
-        <p class="mt-2">
-            <a href="#how-it-works" class="hover:underline mx-2">How It Works</a> | 
-            <a href="#about" class="hover:underline mx-2">About</a>
+        <p class="mt-1 sm:mt-2">
+            <a href="#how-it-works" class="hover:underline mx-1 sm:mx-2">How It Works</a> | 
+            <a href="#about" class="hover:underline mx-1 sm:mx-2">About</a>
         </p>
     </footer>
 
@@ -195,16 +253,16 @@
         // DOM Elements
         const dropZoneFront = document.getElementById('dropZoneFront');
         const cardUploaderFront = document.getElementById('cardUploaderFront');
-        const cardCaptureFront = document.getElementById('cardCaptureFront'); // New for camera
+        const cardCaptureFront = document.getElementById('cardCaptureFront'); 
         const browseButtonFront = document.getElementById('browseButtonFront');
-        const takePhotoButtonFront = document.getElementById('takePhotoButtonFront'); // New for camera
+        const takePhotoButtonFront = document.getElementById('takePhotoButtonFront'); 
         const uploadSectionFront = document.getElementById('uploadSectionFront');
         
         const dropZoneBack = document.getElementById('dropZoneBack');
         const cardUploaderBack = document.getElementById('cardUploaderBack');
-        const cardCaptureBack = document.getElementById('cardCaptureBack'); // New for camera
+        const cardCaptureBack = document.getElementById('cardCaptureBack'); 
         const browseButtonBack = document.getElementById('browseButtonBack');
-        const takePhotoButtonBack = document.getElementById('takePhotoButtonBack'); // New for camera
+        const takePhotoButtonBack = document.getElementById('takePhotoButtonBack'); 
         const uploadSectionBack = document.getElementById('uploadSectionBack');
         const frontImageMiniPreview = document.getElementById('frontImageMiniPreview');
         const backButton = document.getElementById('backButton');
@@ -223,25 +281,24 @@
         let frontFile = null;
         let backFile = null;
 
-        // Mock Professor Names
-        const professorNames = ["Oak", "Elm", "Birch", "Rowan", "Juniper", "Sycamore", "Kukui", "Magnolia", "Laventon", "Sada", "Turo", "Willow", "Ren"];
-        professorNameSpan.textContent = professorNames[Math.floor(Math.random() * professorNames.length)];
+        // Set Professor Name directly
+        professorNameSpan.textContent = "Ren";
 
         // --- Event Listeners for FRONT Uploader ---
         browseButtonFront.addEventListener('click', (event) => {
             event.stopPropagation(); 
             cardUploaderFront.click();
         });
-        takePhotoButtonFront.addEventListener('click', (event) => { // Listener for Take Photo (Front)
+        takePhotoButtonFront.addEventListener('click', (event) => { 
             event.stopPropagation();
             cardCaptureFront.click();
         });
         cardUploaderFront.addEventListener('change', (event) => handleFileSelect(event, 'front'));
-        cardCaptureFront.addEventListener('change', (event) => handleFileSelect(event, 'front')); // Use same handler
+        cardCaptureFront.addEventListener('change', (event) => handleFileSelect(event, 'front')); 
 
         dropZoneFront.addEventListener('click', (event) => {
             if (event.target === dropZoneFront || event.target.classList.contains('pointer-events-none')) {
-                 cardUploaderFront.click(); // Default to browse when clicking drop zone
+                 cardUploaderFront.click(); 
             }
         });
         dropZoneFront.addEventListener('dragover', (event) => dragOverHandler(event, dropZoneFront));
@@ -254,16 +311,16 @@
             event.stopPropagation();
             cardUploaderBack.click();
         });
-        takePhotoButtonBack.addEventListener('click', (event) => { // Listener for Take Photo (Back)
+        takePhotoButtonBack.addEventListener('click', (event) => { 
             event.stopPropagation();
             cardCaptureBack.click();
         });
         cardUploaderBack.addEventListener('change', (event) => handleFileSelect(event, 'back'));
-        cardCaptureBack.addEventListener('change', (event) => handleFileSelect(event, 'back')); // Use same handler
+        cardCaptureBack.addEventListener('change', (event) => handleFileSelect(event, 'back')); 
 
         dropZoneBack.addEventListener('click', (event) => {
              if (event.target === dropZoneBack || event.target.classList.contains('pointer-events-none')) {
-                cardUploaderBack.click(); // Default to browse
+                cardUploaderBack.click(); 
             }
         });
         dropZoneBack.addEventListener('dragover', (event) => dragOverHandler(event, dropZoneBack));
@@ -274,7 +331,7 @@
             uploadSectionBack.classList.add('hidden');
             uploadSectionFront.classList.remove('hidden');
             cardUploaderBack.value = ''; 
-            cardCaptureBack.value = ''; // Clear capture input as well
+            cardCaptureBack.value = ''; 
             backFile = null;
         });
 
@@ -286,11 +343,11 @@
         function dragLeaveHandler(zone) {
             zone.classList.remove('dragover');
         }
-        function dropHandler(event, zone, uploaderInstance, side) { // uploaderInstance is the specific input to use
+        function dropHandler(event, zone, uploaderInstance, side) { 
             event.preventDefault();
             zone.classList.remove('dragover');
             if (event.dataTransfer.files && event.dataTransfer.files[0]) {
-                uploaderInstance.files = event.dataTransfer.files; // Assign to the correct file input
+                uploaderInstance.files = event.dataTransfer.files; 
                 handleFileSelect({ target: uploaderInstance }, side);
             }
         }
@@ -316,12 +373,10 @@
                     }
                 }
                 reader.readAsDataURL(file);
-            } else if (file) { // If a file is selected but it's not an image
+            } else if (file) { 
                 alert("Oops! Please select an image file (e.g., JPG, PNG).");
-                event.target.value = ''; // Clear the invalid file from the input
+                event.target.value = ''; 
             }
-             // If no file is selected (e.g., user cancels camera/file dialog), do nothing.
-             // The event.target.files[0] will be undefined.
         }
         
         function startAnalysis() {
@@ -359,7 +414,7 @@
                 const randomCondition = conditions[Math.floor(Math.random() * conditions.length)];
 
                 conditionResult.textContent = randomCondition.name;
-                conditionResult.className = `condition-tag text-2xl mb-3 inline-block ${randomCondition.colorClass}`;
+                conditionResult.className = `condition-tag text-xl md:text-2xl mb-2 inline-block ${randomCondition.colorClass}`;
                 conditionDescription.textContent = randomCondition.description;
 
             }, 2500); 
@@ -371,15 +426,15 @@
             uploadSectionFront.classList.remove('hidden'); 
             
             cardUploaderFront.value = ''; 
-            cardCaptureFront.value = ''; // Clear capture input
+            cardCaptureFront.value = ''; 
             cardUploaderBack.value = '';
-            cardCaptureBack.value = ''; // Clear capture input
+            cardCaptureBack.value = ''; 
             frontFile = null;
             backFile = null;
 
             const placeholderFront = 'https://placehold.co/150x210/A0AEC0/FFFFFF?text=Front';
             const placeholderBack = 'https://placehold.co/150x210/A0AEC0/FFFFFF?text=Back';
-            const placeholderMini = 'https://placehold.co/100x140/A0AEC0/FFFFFF?text=Front';
+            const placeholderMini = 'https://placehold.co/80x112/A0AEC0/FFFFFF?text=Front';
 
             uploadedImagePreviewFront.src = placeholderFront;
             uploadedImagePreviewBack.src = placeholderBack;
